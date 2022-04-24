@@ -5,6 +5,7 @@ var app = express();
 var namevar;
 // middleware
 app.use(express.json());
+let a = 0;
 app.use(express.urlencoded());
 app.use(express.static("public"));
 app.get("/", function (req, res) {
